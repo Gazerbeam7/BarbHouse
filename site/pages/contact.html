@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link href="../style/style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Russo+One"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../images/logo_white.png" />
+    <script src="../script/script.js"></script>
+    <title>Barb'House</title>
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <nav>
+          <a href="index.html"
+            ><img src="../images/logo_white.png" alt="logo" id="logo"
+          /></a>
+          <img src="../images/icon-cart.png" alt="cart" id="cart" />
+          <img src="../images/ic_profile.png" alt="profile" id="profile" />
+          <ul>
+            <li><a href="barbers.html">Barbiers</a></li>
+            <li><a href="news.html">Actus</a></li>
+            <li><a href="shop.html">Boutique</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="contact_image">
+      <div class="wrapper">
+        <h2 id="special"><strong>Nous contacter</strong></h2>
+      </div>
+    </section>
+
+    <section class="main_article">
+      <div>
+        <h1 class="title">Besoin de rentrer en contact avec nous ?</h1>
+        <br />
+        <form onsubmit="myFunction(event)">
+          <div>
+            <input type="radio" name="choice" value="contact" id="contact" />
+            <label for="contact">Demande de contact</label>
+            <input
+              type="radio"
+              name="choice"
+              value="partnership"
+              id="partnership"
+            />
+            <label for="partnership">Demande de partenariat</label>
+            <input type="radio" name="choice" value="private" id="private" />
+            <label for="private">message perso</label>
+          </div>
+          <div>
+            <input type="text" name="prénom" placeholder="Prénom" />
+          </div>
+
+          <div>
+            <input type="text" name="nom" placeholder="Nom" />
+          </div>
+
+          <div>
+            <textarea
+              rows="6"
+              cols="60"
+              placeholder="Entrez votre message"
+            ></textarea>
+          </div>
+
+          <div>
+            <button type="submit" class="button-contact" id="demo">
+              <strong>ENVOYER</strong>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrapper">
+        <h1>Barb'House 2019</h1>
+      </div>
+    </footer>
+  </body>
+</html>
